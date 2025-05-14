@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planning Été 2025</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .morning-theme {
+      color: #1e1e1e;
+    }
+    .morning-theme #taskList div {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: #1e1e1e;
+    }
+    .morning-theme h1, .morning-theme h2, .morning-theme p, .morning-theme #dateDisplay {
+      color: #1e1e1e !important;
+    }
+  </style>
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#1e1e50" />
+</head>
+<body class="bg-gradient-to-b from-indigo-900 to-indigo-700 min-h-screen text-white font-sans flex flex-col items-center justify-center p-6">
+  <div class="w-full max-w-md flex flex-col space-y-8 items-center">
+    <h1 class="text-3xl font-bold mb-4 text-center">Planning du Jour</h1>
+    <div id="dateDisplay" class="text-center text-lg mb-6"></div>
+    <div class="w-full max-w-md mb-2">
+      <div class="h-3 w-full bg-indigo-300 bg-opacity-30 rounded-full overflow-hidden">
+        <div id="progressBar" class="h-full bg-green-400 transition-all duration-300 ease-in-out" style="width: 0%"></div>
+      </div>
+    </div>
+    <div class="flex justify-between w-full max-w-md px-4 mb-4">
+      <button onclick="showPreviousDay()" id="prevBtn" class="bg-white bg-opacity-20 rounded px-3 py-1 disabled:opacity-30">← Jour précédent</button>
+      <button onclick="showNextDay()" id="nextBtn" class="bg-white bg-opacity-20 rounded px-3 py-1 disabled:opacity-30">Jour suivant →</button>
+    </div>
+    <div id="taskList" class="w-full space-y-6"></div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'planning_checked';
+    let planning = [];
+    let currentIndex = 0;
+
+    function updateBackgroundByTime() {
+      const hour = new Date().getHours();
+      const body = document.body;
+      body.classList.remove(
+        "from-indigo-900", "to-indigo-700",
+        "from-yellow-200", "to-orange-300",
+        "from-blue-200", "to-blue-400",
+        "from-indigo-800", "to-indigo-900",
+        "from-orange-400", "to-pink-500",
+        "morning-theme", "day-theme", "sunset-theme", "night-theme"
+      );
+      if (hour >= 5 && hour < 9) {
+        // Matin tôt (lever de soleil)
+        body.classList.add("bg-gradient-to-b", "from-yellow-200", "to-orange-300", "morning-theme");
+      } else if (hour >= 9 && hour < 15) {
+        // Journée
+        body.classList.add("bg-gradient-to-b", "from-blue-200", "to-blue-400", "day-theme");
+      } else if (hour >= 15 && hour < 19) {
+        // Après-midi (coucher de soleil)
+        body.classList.add("bg-gradient-to-b", "from-orange-400", "to-pink-500", "sunset-theme");
+      } else {
+        // Soir / nuit
+        body.classList.add("bg-gradient-to-b", "from-indigo-800", "to-indigo-900", "night-theme");
+      }
+    }
+
+    async function loadPlanning() {
+      const response = await fetch('Programme_Ete_2025_Complet.json');
+      planning = await response.json();
+      planning = planning.filter(p => p.Date >= "2025-06-16");
+      updateBackgroundByTime();
+      console.log("Planning chargé :", planning); // DEBUG
+      showTodayTasks();
+    }
+
+    function showTodayTasks() {
+      let today = new Date();
+      const planningStart = new Date("2025-06-16");
+      if (today < planningStart) {
+        today = planningStart;
+      }
+      const todayISO = today.toISOString().split('T')[0];
+      console.log("Date actuelle ISO :", todayISO); // DEBUG
+      const futureDays = planning
+        .filter(p => p.Date >= todayISO)
+        .sort((a, b) => a.Date.localeCompare(b.Date));
+
+      window.filteredPlanning = futureDays;
+      console.log("Jours filtrés :", futureDays.length);
+      currentIndex = 0;
+
+      if (window.filteredPlanning.length === 0) {
+        console.error("Aucun jour futur disponible dans le planning !");
+        document.getElementById('dateDisplay').textContent = "Aucun jour disponible.";
+        document.getElementById('taskList').innerHTML = '';
+        return;
+      }
+
+      renderDay(currentIndex);
+    }
+
+    function renderDay(index) {
+      const selectedDay = window.filteredPlanning[index];
+      const [year, month, day] = selectedDay.Date.split('-');
+      const dateObj = new Date(Number(year), Number(month) - 1, Number(day));
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = dateObj.toLocaleDateString('fr-FR', options);
+      document.getElementById('dateDisplay').textContent = `${formattedDate} – ${selectedDay["Type de jour"]}`;
+
+      const taskList = document.getElementById('taskList');
+      taskList.innerHTML = '';
+
+      const tasks = ["Matin", "Après-midi", "Soir"];
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+
+      tasks.forEach(task => {
+        const id = `${selectedDay.Date}_${task}`;
+        const checked = saved[id] || false;
+
+        const div = document.createElement('div');
+        div.className = "bg-white bg-opacity-10 p-5 rounded shadow-md flex items-center justify-between gap-3";
+        div.innerHTML = `
+          <div>
+            <h2 class="font-semibold text-base">${task}</h2>
+            <p class="text-base">${selectedDay[task]}</p>
+          </div>
+          <input type="checkbox" class="w-6 h-6 text-indigo-500" ${checked ? 'checked' : ''} onchange="toggleCheck('${id}', this.checked)" />
+        `;
+        taskList.appendChild(div);
+      });
+
+      const totalTasks = tasks.length;
+      const completedTasks = tasks.filter(task => saved[`${selectedDay.Date}_${task}`]).length;
+      const percent = Math.round((completedTasks / totalTasks) * 100);
+      document.getElementById('progressBar').style.width = `${percent}%`;
+
+      document.querySelector('button[onclick="showPreviousDay()"]').disabled = (index <= 0);
+      document.querySelector('button[onclick="showNextDay()"]').disabled = (index >= window.filteredPlanning.length - 1);
+    }
+
+    function toggleCheck(id, value) {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      saved[id] = value;
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(saved));
+      renderDay(currentIndex); // Met à jour la barre de progression en temps réel
+    }
+
+    function showPreviousDay() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        renderDay(currentIndex);
+      }
+    }
+
+    function showNextDay() {
+      if (currentIndex < window.filteredPlanning.length - 1) {
+        currentIndex++;
+        renderDay(currentIndex);
+      }
+    }
+
+    loadPlanning();
+
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(reg => console.log('✅ Service Worker enregistré:', reg))
+          .catch(err => console.error('❌ Erreur Service Worker:', err));
+      });
+    }
+  </script>
+</body>
+</html>

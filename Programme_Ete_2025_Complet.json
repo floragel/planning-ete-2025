@@ -1,0 +1,450 @@
+[
+  {
+    "Date": "2025-06-16",
+    "Jour": "Monday",
+    "Type de jour": "Musculation",
+    "Matin": "Nombres réels, intervalles, valeur absolue (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-17",
+    "Jour": "Tuesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Calcul littéral, factorisation, équations/ inéquations (Maths 2de FR)",
+    "Après-midi": "SAT Math - Bases",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-18",
+    "Jour": "Wednesday",
+    "Type de jour": "Musculation",
+    "Matin": "Vecteurs, droites, plans (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-19",
+    "Jour": "Thursday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Repérage, colinéarité (Maths 2de FR)",
+    "Après-midi": "SAT Math - Intermédiaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-20",
+    "Jour": "Friday",
+    "Type de jour": "Musculation",
+    "Matin": "Fonctions affines, carrées (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-21",
+    "Jour": "Saturday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Fonctions racine, variations, représentations (Maths 2de FR)",
+    "Après-midi": "SAT Writing - Grammaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-22",
+    "Jour": "Sunday",
+    "Type de jour": "Musculation",
+    "Matin": "Statistiques : moyenne, médiane, variance (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-23",
+    "Jour": "Monday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Probabilités simples (Maths 2de FR)",
+    "Après-midi": "SAT Reading - Littéraire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-24",
+    "Jour": "Tuesday",
+    "Type de jour": "Musculation",
+    "Matin": "Algorithmique et programmation (Python) (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-25",
+    "Jour": "Wednesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Corps purs et mélanges (Physique 2de FR)",
+    "Après-midi": "SAT Reading - Scientifique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-26",
+    "Jour": "Thursday",
+    "Type de jour": "Musculation",
+    "Matin": "Modèle microscopique, ions, molécules (Physique 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-27",
+    "Jour": "Friday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Quantité de matière et mole (Physique 2de FR)",
+    "Après-midi": "SAT Writing - Logique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-28",
+    "Jour": "Saturday",
+    "Type de jour": "Musculation",
+    "Matin": "Dissolutions, dilutions, dosages (Physique 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-29",
+    "Jour": "Sunday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Réactions chimiques et bilans (Physique 2de FR)",
+    "Après-midi": "SAT Full Test",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-06-30",
+    "Jour": "Monday",
+    "Type de jour": "Musculation",
+    "Matin": "MRU / MRUA (Physique 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-01",
+    "Jour": "Tuesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Forces, poids, tension, frottement (Physique 2de FR)",
+    "Après-midi": "SAT Math - Bases",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-02",
+    "Jour": "Wednesday",
+    "Type de jour": "Musculation",
+    "Matin": "Lois de Newton / équilibre solide (Physique 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-03",
+    "Jour": "Thursday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Ondes mécaniques, signaux, fréquence (Physique 2de FR)",
+    "Après-midi": "SAT Math - Intermédiaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-04",
+    "Jour": "Friday",
+    "Type de jour": "Musculation",
+    "Matin": "Lentilles et lumière (Physique 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-05",
+    "Jour": "Saturday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Arithmétique : nombres, fractions, simplifications (Maths Sec 5 QC)",
+    "Après-midi": "SAT Writing - Grammaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-06",
+    "Jour": "Sunday",
+    "Type de jour": "Musculation",
+    "Matin": "Exponentiation, racines, logarithmes (Maths Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-07",
+    "Jour": "Monday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Équations : polynomiales, exponentielles, rationnelles (Maths Sec 5 QC)",
+    "Après-midi": "SAT Reading - Littéraire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-08",
+    "Jour": "Tuesday",
+    "Type de jour": "Musculation",
+    "Matin": "Fonctions polynomiales degré 2 (Maths Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-09",
+    "Jour": "Wednesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Fonctions racine carrée (Maths Sec 5 QC)",
+    "Après-midi": "SAT Reading - Scientifique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-10",
+    "Jour": "Thursday",
+    "Type de jour": "Musculation",
+    "Matin": "Fonctions rationnelles (Maths Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-11",
+    "Jour": "Friday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Fonctions trigonométriques (Maths Sec 5 QC)",
+    "Après-midi": "SAT Writing - Logique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-12",
+    "Jour": "Saturday",
+    "Type de jour": "Musculation",
+    "Matin": "Opérations sur fonctions (Maths Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-13",
+    "Jour": "Sunday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Trigonométrie et identités (Maths Sec 5 QC)",
+    "Après-midi": "SAT Full Test",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-14",
+    "Jour": "Monday",
+    "Type de jour": "Musculation",
+    "Matin": "Géométrie analytique (Maths Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-15",
+    "Jour": "Tuesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Systèmes et optimisation linéaire (Maths Sec 5 QC)",
+    "Après-midi": "SAT Math - Bases",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-16",
+    "Jour": "Wednesday",
+    "Type de jour": "Musculation",
+    "Matin": "Réflexion (miroirs) (Physique Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-17",
+    "Jour": "Thursday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Réfraction (loi de Snell) (Physique Sec 5 QC)",
+    "Après-midi": "SAT Math - Intermédiaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-18",
+    "Jour": "Friday",
+    "Type de jour": "Musculation",
+    "Matin": "Lentilles et images (Physique Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-19",
+    "Jour": "Saturday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "MRU / MRUA (Physique Sec 5 QC)",
+    "Après-midi": "SAT Writing - Grammaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-20",
+    "Jour": "Sunday",
+    "Type de jour": "Musculation",
+    "Matin": "Chute libre et plans inclinés (Physique Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-21",
+    "Jour": "Monday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Mouvement de projectile (Physique Sec 5 QC)",
+    "Après-midi": "SAT Reading - Littéraire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-22",
+    "Jour": "Tuesday",
+    "Type de jour": "Musculation",
+    "Matin": "Forces et lois de Newton (Physique Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-23",
+    "Jour": "Wednesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Énergie, puissance, travail (Physique Sec 5 QC)",
+    "Après-midi": "SAT Reading - Scientifique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-24",
+    "Jour": "Thursday",
+    "Type de jour": "Musculation",
+    "Matin": "Rendement énergétique (Physique Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-25",
+    "Jour": "Friday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Conservation de l’énergie mécanique (Physique Sec 5 QC)",
+    "Après-midi": "SAT Writing - Logique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-26",
+    "Jour": "Saturday",
+    "Type de jour": "Musculation",
+    "Matin": "Propriétés des gaz (Chimie Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-27",
+    "Jour": "Sunday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Lois des gaz (Boyle, Charles…) (Chimie Sec 5 QC)",
+    "Après-midi": "SAT Full Test",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-28",
+    "Jour": "Monday",
+    "Type de jour": "Musculation",
+    "Matin": "Gaz parfaits, pressions partielles (Chimie Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-29",
+    "Jour": "Tuesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Réactions endo/exo, diagrammes, enthalpie (Chimie Sec 5 QC)",
+    "Après-midi": "SAT Math - Bases",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-30",
+    "Jour": "Wednesday",
+    "Type de jour": "Musculation",
+    "Matin": "Complexe activé, loi de Hess (Chimie Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-07-31",
+    "Jour": "Thursday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Chaleur molaire et calorimétrie (Chimie Sec 5 QC)",
+    "Après-midi": "SAT Math - Intermédiaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-01",
+    "Jour": "Friday",
+    "Type de jour": "Musculation",
+    "Matin": "Vitesse de réaction (Chimie Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-02",
+    "Jour": "Saturday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Théorie des collisions / facteurs (Chimie Sec 5 QC)",
+    "Après-midi": "SAT Writing - Grammaire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-03",
+    "Jour": "Sunday",
+    "Type de jour": "Musculation",
+    "Matin": "Équilibre chimique (Chimie Sec 5 QC)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-04",
+    "Jour": "Monday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Principe de Le Chatelier (Chimie Sec 5 QC)",
+    "Après-midi": "SAT Reading - Littéraire",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-05",
+    "Jour": "Tuesday",
+    "Type de jour": "Musculation",
+    "Matin": "Nombres réels, intervalles, valeur absolue (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-06",
+    "Jour": "Wednesday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Calcul littéral, factorisation, équations/ inéquations (Maths 2de FR)",
+    "Après-midi": "SAT Reading - Scientifique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-07",
+    "Jour": "Thursday",
+    "Type de jour": "Musculation",
+    "Matin": "Vecteurs, droites, plans (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-08",
+    "Jour": "Friday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Repérage, colinéarité (Maths 2de FR)",
+    "Après-midi": "SAT Writing - Logique",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-09",
+    "Jour": "Saturday",
+    "Type de jour": "Musculation",
+    "Matin": "Fonctions affines, carrées (Maths 2de FR)",
+    "Après-midi": "Clofit",
+    "Soir": "Lecture (roman en anglais)"
+  },
+  {
+    "Date": "2025-08-10",
+    "Jour": "Sunday",
+    "Type de jour": "Cardio (3h)",
+    "Matin": "Fonctions racine, variations, représentations (Maths 2de FR)",
+    "Après-midi": "SAT Full Test",
+    "Soir": "Lecture (roman en anglais)"
+  }
+]
